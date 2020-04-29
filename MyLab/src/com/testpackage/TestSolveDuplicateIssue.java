@@ -7,7 +7,7 @@ import java.util.stream.Collectors;
 
 public class TestSolveDuplicateIssue {
 
-	public static void main(String[] args) {
+	public Map<String,Student> solveDuplicateIssue () {
 		Student st1 = new Student();
 		Student st2 = new Student();
 		
@@ -28,7 +28,7 @@ public class TestSolveDuplicateIssue {
 			System.out.println(entry.getValue().getName()+""+entry.getValue().getId());
 		}
 		
-
+return map;
 	}
 
 }

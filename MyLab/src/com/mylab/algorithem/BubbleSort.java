@@ -3,7 +3,7 @@ package com.mylab.algorithem;
 public class BubbleSort {
 	private static void bubbleSort(int a[]) {
 		int al = a.length;
-		for(int i=0;i<al-1;i++) {
+		for(int i=0;i<al;i++) {
 			for(int j=0;j<al-i-1;j++)
 			{
 				if(a[j]>a[j+1])

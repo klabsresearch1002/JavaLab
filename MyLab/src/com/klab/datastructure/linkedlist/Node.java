@@ -1,7 +1,8 @@
 package com.klab.datastructure.linkedlist;
 
-public class Node {
-	int data;
-	Node next;
+public class Node<E> {
+	E item;
+	Node<E> next;
+	Node<E> prev;
 
 }

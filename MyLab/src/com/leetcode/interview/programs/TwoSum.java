@@ -17,7 +17,7 @@ public class TwoSum {
 	/*Approach 1: Brute Force
 	The brute force approach is simple. Loop through each element X and find if there is another value that equals to target target − x.*/
 	
-	public static int[] twoSum(int[] array,int target) {
+	public int[] twoSumBruteForce(int[] array,int target) {
 		for(int i=0; i<=array.length-1 ; i++) 
 		{
 			for(int j=0+i;j<=array.length-1;j++) {
@@ -30,16 +30,20 @@ public class TwoSum {
 					
 	}
 	
-
-	public static void main(String[] args) {
-		int[] array = new int[] {1,2,3,4,5,6};
-		int target = 11;
-		int[] solution = twoSum(array,target);
-		for(int i=0;i<solution.length;i++) {
-			System.out.println(solution[i]);
-		}
+public int[] twoSumMySolution(int[] inputArray,int target) {
+		int[] result = {};
 		
-
+		for(int i=0; i<=inputArray.length-1;i++) {
+			for(int j=i+1;j<=inputArray.length-1;j++) {
+					if((inputArray[i]+inputArray[j]) == target){
+						result = new int[] {i,j};
+					}
+				}
+			}
+		
+		
+		
+		return result;
 	}
 
 }

@@ -33,8 +33,6 @@ public class ReverseStringInDifferentWay {
 		char[] charArray = input.toCharArray();
 		StringBuilder reverse = new StringBuilder();
 		
-		System.out.println(charArray.);
-		
 		reverse.append(charArray.toString()).reverse();
 		System.out.println(reverse.toString());
 		
